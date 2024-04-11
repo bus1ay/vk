@@ -84,36 +84,101 @@
                     <view key="view" contentMode="scaleToFill" id="FIf-Pe-TPn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications2" translatesAutoresizingMaskIntoConstraints="NO" id="aTZ-lj-iZn">
+                                <rect key="frame" x="20" y="245" width="353" height="363"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dri-l3-UuT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92549020049999997" green="0.92941176889999999" blue="0.94117647410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aTZ-lj-iZn" firstAttribute="top" secondItem="dri-l3-UuT" secondAttribute="top" constant="186" id="DTG-dN-184"/>
+                            <constraint firstItem="dri-l3-UuT" firstAttribute="bottom" secondItem="aTZ-lj-iZn" secondAttribute="bottom" constant="161" id="Lyi-6S-XqO"/>
+                            <constraint firstItem="aTZ-lj-iZn" firstAttribute="leading" secondItem="dri-l3-UuT" secondAttribute="leading" constant="20" id="MEQ-ZO-x3o"/>
+                            <constraint firstItem="dri-l3-UuT" firstAttribute="trailing" secondItem="aTZ-lj-iZn" secondAttribute="trailing" constant="20" id="d9u-m1-bdd"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="notifications" id="LvX-w2-tj3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ybl-PX-yUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1215" y="568"/>
+            <point key="canvasLocation" x="1214.5038167938931" y="567.6056338028169"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="1se-Zj-t7E">
             <objects>
-                <viewController id="WoZ-eN-Y5X" sceneMemberID="viewController">
+                <viewController id="WoZ-eN-Y5X" customClass="ProfileViewController" customModule="SocialNetwork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh7-qe-prc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f5X-x3-bWD">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="rsa-xC-0eh" customClass="ProfileTableViewCell" customModule="SocialNetwork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rsa-xC-0eh" id="iX5-E1-0zY">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="V9y-xa-Qjq">
+                                                    <rect key="frame" x="20" y="36.333333333333329" width="25" height="24.333333333333336"/>
+                                                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Erp-dM-7DN"/>
+                                                        <constraint firstAttribute="width" constant="25" id="TpU-Zd-pCu"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-0L-kkh">
+                                                    <rect key="frame" x="60" y="37.666666666666664" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nqQ-0L-kkh" firstAttribute="leading" secondItem="V9y-xa-Qjq" secondAttribute="trailing" constant="15" id="2Z7-tj-aT5"/>
+                                                <constraint firstItem="V9y-xa-Qjq" firstAttribute="centerY" secondItem="iX5-E1-0zY" secondAttribute="centerY" id="EtC-tB-Szq"/>
+                                                <constraint firstItem="V9y-xa-Qjq" firstAttribute="leading" secondItem="iX5-E1-0zY" secondAttribute="leadingMargin" id="duZ-x1-622"/>
+                                                <constraint firstItem="nqQ-0L-kkh" firstAttribute="centerY" secondItem="iX5-E1-0zY" secondAttribute="centerY" id="s3K-lP-ps2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuName" destination="nqQ-0L-kkh" id="NZR-Fz-aHZ"/>
+                                            <outlet property="pic" destination="V9y-xa-Qjq" id="V3O-ET-MoC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="WoZ-eN-Y5X" id="VfE-hW-jpJ"/>
+                                    <outlet property="delegate" destination="WoZ-eN-Y5X" id="Jdd-HY-SdS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Emy-Sq-Sz3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f5X-x3-bWD" firstAttribute="bottom" secondItem="Emy-Sq-Sz3" secondAttribute="bottom" id="9Qm-Hf-fJ8"/>
+                            <constraint firstItem="f5X-x3-bWD" firstAttribute="top" secondItem="Emy-Sq-Sz3" secondAttribute="top" id="9lw-Lm-zV5"/>
+                            <constraint firstItem="f5X-x3-bWD" firstAttribute="trailing" secondItem="Emy-Sq-Sz3" secondAttribute="trailing" id="hPc-2u-LVx"/>
+                            <constraint firstItem="f5X-x3-bWD" firstAttribute="leading" secondItem="Emy-Sq-Sz3" secondAttribute="leading" id="vnk-X0-avX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="profile" id="5GG-YK-n1b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2p-y1-nra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1978" y="567"/>
+            <point key="canvasLocation" x="1977.8625954198471" y="566.90140845070425"/>
         </scene>
     </scenes>
     <resources>
         <image name="chat" width="23.666666030883789" height="22.666666030883789"/>
         <image name="feed" width="20" height="20"/>
         <image name="notifications" width="22.333333969116211" height="22"/>
+        <image name="notifications2" width="786" height="810"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="profile" width="24.333333969116211" height="20"/>
         <image name="search" width="21.333333969116211" height="21"/>
         <systemColor name="systemBackgroundColor">
