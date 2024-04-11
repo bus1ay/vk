@@ -16,6 +16,13 @@
 		7836731A2BAC87C1000C23DF /* SocialNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783673192BAC87C1000C23DF /* SocialNetworkTests.swift */; };
 		783673242BAC87C1000C23DF /* SocialNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783673232BAC87C1000C23DF /* SocialNetworkUITests.swift */; };
 		783673262BAC87C1000C23DF /* SocialNetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783673252BAC87C1000C23DF /* SocialNetworkUITestsLaunchTests.swift */; };
+		78EA88EC2BC713C2004E54E0 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EA88EB2BC713C2004E54E0 /* Tabbar.storyboard */; };
+		78EA88EE2BC75FD7004E54E0 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88ED2BC75FD7004E54E0 /* TabbarController.swift */; };
+		78EA88F52BC76106004E54E0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88F42BC76106004E54E0 /* FeedViewController.swift */; };
+		78EA88F72BC76112004E54E0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88F62BC76112004E54E0 /* SearchViewController.swift */; };
+		78EA88F92BC7611B004E54E0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88F82BC7611B004E54E0 /* ChatViewController.swift */; };
+		78EA88FB2BC76129004E54E0 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88FA2BC76129004E54E0 /* NotificationsViewController.swift */; };
+		78EA88FD2BC76138004E54E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA88FC2BC76138004E54E0 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		7836731F2BAC87C1000C23DF /* SocialNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		783673232BAC87C1000C23DF /* SocialNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUITests.swift; sourceTree = "<group>"; };
 		783673252BAC87C1000C23DF /* SocialNetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78EA88EB2BC713C2004E54E0 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		78EA88ED2BC75FD7004E54E0 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		78EA88F42BC76106004E54E0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		78EA88F62BC76112004E54E0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		78EA88F82BC7611B004E54E0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		78EA88FA2BC76129004E54E0 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		78EA88FC2BC76138004E54E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +113,9 @@
 		783673012BAC87BF000C23DF /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				783673022BAC87BF000C23DF /* AppDelegate.swift */,
-				783673042BAC87BF000C23DF /* SceneDelegate.swift */,
-				783673062BAC87BF000C23DF /* ViewController.swift */,
-				783673082BAC87BF000C23DF /* Main.storyboard */,
+				78EA88E72BC7104F004E54E0 /* Application */,
+				78EA88E92BC7108C004E54E0 /* Main */,
+				78EA88EA2BC71397004E54E0 /* Tabbar */,
 				7836730B2BAC87C1000C23DF /* Assets.xcassets */,
 				7836730D2BAC87C1000C23DF /* LaunchScreen.storyboard */,
 				783673102BAC87C1000C23DF /* Info.plist */,
@@ -125,6 +138,78 @@
 				783673252BAC87C1000C23DF /* SocialNetworkUITestsLaunchTests.swift */,
 			);
 			path = SocialNetworkUITests;
+			sourceTree = "<group>";
+		};
+		78EA88E72BC7104F004E54E0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				783673022BAC87BF000C23DF /* AppDelegate.swift */,
+				783673042BAC87BF000C23DF /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		78EA88E92BC7108C004E54E0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				783673062BAC87BF000C23DF /* ViewController.swift */,
+				783673082BAC87BF000C23DF /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		78EA88EA2BC71397004E54E0 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88EF2BC76030004E54E0 /* feed */,
+				78EA88F02BC76045004E54E0 /* search */,
+				78EA88F12BC76057004E54E0 /* chat */,
+				78EA88F22BC76060004E54E0 /* notifications */,
+				78EA88F32BC7606C004E54E0 /* profile */,
+				78EA88EB2BC713C2004E54E0 /* Tabbar.storyboard */,
+				78EA88ED2BC75FD7004E54E0 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		78EA88EF2BC76030004E54E0 /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88F42BC76106004E54E0 /* FeedViewController.swift */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		78EA88F02BC76045004E54E0 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88F62BC76112004E54E0 /* SearchViewController.swift */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		78EA88F12BC76057004E54E0 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88F82BC7611B004E54E0 /* ChatViewController.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		78EA88F22BC76060004E54E0 /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88FA2BC76129004E54E0 /* NotificationsViewController.swift */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		78EA88F32BC7606C004E54E0 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				78EA88FC2BC76138004E54E0 /* ProfileViewController.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EA88EC2BC713C2004E54E0 /* Tabbar.storyboard in Resources */,
 				7836730C2BAC87C1000C23DF /* Assets.xcassets in Resources */,
 				7836730F2BAC87C1000C23DF /* Base in Resources */,
 				7836730A2BAC87BF000C23DF /* Base in Resources */,
@@ -258,9 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EA88F72BC76112004E54E0 /* SearchViewController.swift in Sources */,
 				783673072BAC87BF000C23DF /* ViewController.swift in Sources */,
+				78EA88EE2BC75FD7004E54E0 /* TabbarController.swift in Sources */,
+				78EA88F92BC7611B004E54E0 /* ChatViewController.swift in Sources */,
+				78EA88F52BC76106004E54E0 /* FeedViewController.swift in Sources */,
 				783673032BAC87BF000C23DF /* AppDelegate.swift in Sources */,
+				78EA88FD2BC76138004E54E0 /* ProfileViewController.swift in Sources */,
 				783673052BAC87BF000C23DF /* SceneDelegate.swift in Sources */,
+				78EA88FB2BC76129004E54E0 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
